@@ -148,13 +148,13 @@ CREATE TABLE contato (
 2. Atualize as credencias do banco: 
  Abra o arquivo src/main/resources/application.properties e verifique: 
 
-spring.datasource.url=jdbc:mysql://localhost:3306/gestao_contatos
-spring.datasource.username=root  # (ou seu usuário)
-spring.datasource.password=      # (sua senha, se tiver) 
+  spring.datasource.url=jdbc:mysql://localhost:3306/gestao_contatos
+  spring.datasource.username=root  # (ou seu usuário)
+  spring.datasource.password=      # (sua senha, se tiver) 
 
 3. Execute a Aplicação 
 
-No NetBeans: 
+  No NetBeans: 
 
 1. Clique com botão direito no projeto > Clean and Build > Run (ou pressione F6)
 
