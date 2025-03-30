@@ -41,7 +41,7 @@ gestao/
 
 ## 📌 Endpoints 
 
------ Clientes ----- 
+## ----- Clientes ----- 
 
 - Listar todos os clientes 
 ## GET /api/clientes 
@@ -64,7 +64,7 @@ gestao/
 } 
 
 
------ Contatos ----- 
+## ----- Contatos ----- 
 
 - Listar contatos de um cliente 
 
