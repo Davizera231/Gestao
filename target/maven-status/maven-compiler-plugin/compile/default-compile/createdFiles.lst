@@ -1,4 +1,3 @@
-com\comercio\Application$1.class
 com\comercio\controller\ClienteController.class
 com\comercio\model\Contato.class
 com\comercio\service\ContatoService.class

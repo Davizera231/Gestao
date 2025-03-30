@@ -38,15 +38,7 @@ public class ClienteService {
         clienteAtualizado.setId(id);
         return repository.save(clienteAtualizado);
     }
-    
-  //  public List<Cliente> buscarPorNome(String nome) {
-   //     return repository.findByNomeContainingIgnoreCase(nome);
-  //  }
-    
-   // public Cliente buscarPorCpf(String cpf) {
-    //    return repository.findByCpf(cpf);
-   // }
-    
+      
     public List<Cliente> buscarPorNomeECpf(String nome, String cpf) {
         if (nome != null  || cpf != null ) {
         } else { 
@@ -54,20 +46,5 @@ public class ClienteService {
         }
         return repository.findByNomeOrCpf(nome, cpf);
     }
-    
-   //  public List<Cliente> buscarPorNomeECpf(String nome, String cpf) {
-    //    if (nome != null && cpf != null) {
-    //        return repository.findByNomeContainingAndCpf(nome, cpf);
-    //    } else if (nome != null) {
-    //        return repository.findByNomeContaining(nome);
-     //   } else if (cpf != null) {
-     //       return repository.findByCpf(cpf);
-     //   }
-    //    return Collections.emptyList();
-   // }
-
-   // public boolean existePorCpf(String cpf) {
-    //    return repository.existsByCpf(cpf);
-    //}
-    
+      
 }

@@ -41,11 +41,10 @@ public class ContatoService {
         return repository.findById(id);
     }
     
-    // ContatoService.java
+    
     public Contato atualizarContato(Integer id, Contato contatoAtualizado) {
         return repository.findById(id)
             .map(contatoExistente -> {
-                // Copia apenas os campos permitidos para atualização
                 contatoExistente.setTipo(contatoAtualizado.getTipo());
                 contatoExistente.setValor(contatoAtualizado.getValor());
                 contatoExistente.setObservacao(contatoAtualizado.getObservacao());

@@ -29,8 +29,6 @@ public class ClienteController {
     }
 
     private boolean validarCPF(String cpf) {
-        // Implemente a validação de CPF em Java aqui
-        // (exemplo simplificado)
         cpf = cpf.replaceAll("[^0-9]", "");
         return cpf.length() == 11;
     }
@@ -80,15 +78,6 @@ public class ClienteController {
         List<Cliente> clientes = service.buscarPorNomeECpf(nome, cpfSemFormatacao);
         return ResponseEntity.ok(clientes);
         
-        //return ResponseEntity.ok(service.buscarPorNomeECpf(nome, cpf));
     }
     
-    //@GetMapping("/cpf/{cpf}")
-   // public ResponseEntity<Cliente> buscarPorCpf(@PathVariable String cpf) {
-     //   Cliente cliente = service.buscarPorCpf(cpf);
-      //  if (cliente != null) {
-      //      return ResponseEntity.ok(cliente);
-     //   }
-     //   return ResponseEntity.notFound().build();
-    //
 }

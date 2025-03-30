@@ -14,7 +14,6 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface ClienteRepository extends JpaRepository<Cliente, Integer> {
-    // Métodos customizados (se necessário)
      
         @Query("SELECT c FROM Cliente c WHERE " +
                "(:nome IS NULL OR c.nome LIKE %:nome%) AND " +
@@ -25,18 +24,5 @@ public interface ClienteRepository extends JpaRepository<Cliente, Integer> {
         );
     
     
-    
-    
-    
-   // List<Cliente> findByNomeContaining(String nome);
-   // List<Cliente> findByCpf(String cpf);
-   // List<Cliente> findByNomeContainingAndCpf(String nome, String cpf); 
-   // boolean existsByCpf(String cpf);
-
-  //  @Override
-  //  public Optional<Cliente> findById(Integer id);
-
-   // public List<Cliente> findByNomeContainingIgnoreCase(String nome);
-
     public boolean existsByCpf(String cpf);
 }
