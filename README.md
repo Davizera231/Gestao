@@ -43,7 +43,7 @@ gestao/
 
 
 
-## 📌 Endpoints<br>
+## 📌 Endpoints
 
 ## ----- Clientes ----- 
 
