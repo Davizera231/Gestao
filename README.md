@@ -18,27 +18,7 @@
 
 ## 📂 Estrutura do Projeto 
 
-gestao/ 
-    src/ 
-      main/
-        java/
-            com/
-                comercio/
-                    controller/ #Endpoints REST 
-                    model/ #Entidades (Cliente, Contato)
-                    repository/ # Repositórios JPA 
-                    service/ # Configurações 
-                aplication.java # Main executa o código 
-        resources/
-            static/
-                index.html # Corpo da página
-                script.js # Conecta a API com as funcionalidades da página
-                style.css # Folha de estilo da página 
-            application.properties #Conexão com banco de dados       
-    database/
-        gestao_contatos # Povoamento do banco de dados 
-pom # Configurações do (Spring boot, drives do banco de dados)
-README.md # Configurações para startar a aplicação.
+gestao/ │── src/ │ ├── main/ │ │ ├── java/com/comercio/ │ │ │ ├── controller/ # Endpoints REST │ │ │ ├── model/ # Entidades (Cliente, Contato) │ │ │ ├── repositório/ # Repositórios JPA │ │ │ ├── service/ # Regras de negócio e lógica de aplicação │ │ │ ├── Application.java # Classe principal para execução │ │ ├── recursos/ │ │ │ ├── static/ │ │ │ │ ├── index.html # Página principal │ │ │ │ ├── script.js # Conectando a API com as funcionalidades │ │ │ │ ├── style.css # Folha de estilo │ │ │ ├── application.properties # Configuração do banco de dados │── database/ │ ├── gestao_contatos/ # Povoamento do banco de dados │── pom.xml # Configuração do Maven (Spring Boot, drivers do banco) │── README.md # Documentação do projeto.
 
 ## 📌 Endpoints 
 
