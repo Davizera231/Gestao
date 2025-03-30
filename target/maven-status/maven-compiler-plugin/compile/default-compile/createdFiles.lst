@@ -1,0 +1,10 @@
+com\comercio\Application$1.class
+com\comercio\controller\ClienteController.class
+com\comercio\model\Contato.class
+com\comercio\service\ContatoService.class
+com\comercio\model\Cliente.class
+com\comercio\service\ClienteService.class
+com\comercio\repository\ContatoRepository.class
+com\comercio\Application.class
+com\comercio\controller\ContatoController.class
+com\comercio\repository\ClienteRepository.class
