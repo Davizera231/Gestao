@@ -63,7 +63,6 @@ gestao/
   "endereco": "Rua Exemplo, 123"
 } 
 
-
 ## ----- Contatos ----- 
 
 - Listar contatos de um cliente 
@@ -84,6 +83,8 @@ gestao/
   "valor": "joao@exemplo.com",
   "observacao": "Contato principal"
 } 
+
+
 
 
 ## 🛠️ Configuração do Banco de Dados 
@@ -113,6 +114,9 @@ CREATE TABLE contato (
     FOREIGN KEY (cliente_id) REFERENCES cliente(id) ON DELETE CASCADE
 ); 
 
+
+
+
 ## 🚀 Startar projeto (BD)
 
 1. Inicie o Banco de Dados
@@ -128,6 +132,9 @@ CREATE TABLE contato (
 6. Senha: (deixe vazio se não tiver senha)
 
 7. Porta: 3306 
+
+
+
 
 ## 🚀 Startar projeto (NETBEANS)
 
@@ -150,9 +157,14 @@ No NetBeans:
 2. Espere até aparecer no console: 
 Started Application in X seconds (indicando que o Spring Boot iniciou). 
 
+
+
+
 ## 📌 Acesse a API 
 
 1. Para conferir se a aplicação está rondando, entre no seu navegador e digite  http://localhost 
+
+
 
 
 ## 📝 Checklist de Implementação
@@ -170,6 +182,9 @@ Started Application in X seconds (indicando que o Spring Boot iniciou).
 6. Configuração de banco de dados
 
 7. Dados iniciais para testes 
+
+
+
 
 ## 📧 Contato
  Para dúvidas ou sugestões, entre em contato:
