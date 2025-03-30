@@ -18,7 +18,26 @@
 
 ## 📂 Estrutura do Projeto 
 
-gestao/ │── src/ │ ├── main/ │ │ ├── java/com/comercio/ │ │ │ ├── controller/ # Endpoints REST │ │ │ ├── model/ # Entidades (Cliente, Contato) │ │ │ ├── repositório/ # Repositórios JPA │ │ │ ├── service/ # Regras de negócio e lógica de aplicação │ │ │ ├── Application.java # Classe principal para execução │ │ ├── recursos/ │ │ │ ├── static/ │ │ │ │ ├── index.html # Página principal │ │ │ │ ├── script.js # Conectando a API com as funcionalidades │ │ │ │ ├── style.css # Folha de estilo │ │ │ ├── application.properties # Configuração do banco de dados │── database/ │ ├── gestao_contatos/ # Povoamento do banco de dados │── pom.xml # Configuração do Maven (Spring Boot, drivers do banco) │── README.md # Documentação do projeto.
+gestao/
+├── src/
+│   ├── main/
+│   │   ├── java/
+│   │   │   └── com/comercio/
+│   │   │       ├── controller/       # Endpoints REST
+│   │   │       ├── model/            # Entidades (Cliente, Contato)
+│   │   │       ├── repository/       # Repositórios JPA
+│   │   │       ├── service/          # Lógica de negócio
+│   │   │       └── Application.java  # Classe principal (executa o código)
+│   │   └── resources/
+│   │       ├── static/
+│   │       │   ├── index.html        # Corpo da página
+│   │       │   ├── script.js         # Conecta API com a página
+│   │       │   └── style.css         # Folha de estilo
+│   │       ├── application.properties # Conexão com banco de dados
+│   │       └── database/
+│   │           └── gestao_contatos   # Scripts de povoamento do BD
+├── pom.xml                           # Configurações (Spring Boot, drivers do BD)
+└── README.md                         # Guia de instalação e uso
 
 ## 📌 Endpoints 
 
@@ -71,9 +90,9 @@ gestao/ │── src/ │ ├── main/ │ │ ├── java/com/comercio/ 
 
 ## O arquivo .sql já foi criado, só startar a aplicação dentro do mesmo já contém o povoamento das tabelas. 
 
-## O arquivo se encontra em gestao/ 
-##                             database/ 
-##                                 gestao_contatos.sql
+ O arquivo se encontra em gestao/ 
+                             database/ 
+                                 gestao_contatos.sql
 
 - Criação das tabelas 
 
@@ -113,10 +132,10 @@ CREATE TABLE contato (
 ## 🚀 Startar projeto (NETBEANS)
 
 1. Abra a interface do NetBeans e selecione: 
-## File > Open Project > Navegue até a pasta gestao 
+ File > Open Project > Navegue até a pasta gestao 
 
 2. Atualize as credencias do banco: 
-## Abra o arquivo src/main/resources/application.properties e verifique: 
+ Abra o arquivo src/main/resources/application.properties e verifique: 
 
 spring.datasource.url=jdbc:mysql://localhost:3306/gestao_contatos
 spring.datasource.username=root  # (ou seu usuário)
@@ -153,8 +172,8 @@ Started Application in X seconds (indicando que o Spring Boot iniciou).
 7. Dados iniciais para testes 
 
 ## 📧 Contato
-## Para dúvidas ou sugestões, entre em contato:
+ Para dúvidas ou sugestões, entre em contato:
 
-## Email: dsandesteixeira54@gmail.com   
+ Email: dsandesteixeira54@gmail.com   
 
-## Repositório: (https://github.com/Davizera231/Gestao.git)
+ Repositório: (https://github.com/Davizera231/Gestao.git)
