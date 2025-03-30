@@ -48,15 +48,15 @@ gestao/
 ## ----- Clientes ----- 
 
 - Listar todos os clientes 
-## GET /api/clientes 
+** GET /api/clientes 
 
 - Buscar cliente por ID 
 
-## GET /api/clientes/{id} 
+** GET /api/clientes/{id} 
 
 - Criar novo cliente 
 
-## POST /api/clientes 
+** POST /api/clientes 
 
 ## Exemplo de corpo: 
 
@@ -71,11 +71,11 @@ gestao/
 
 - Listar contatos de um cliente 
 
-## GET /api/contatos/cliente/{clienteId} 
+** GET /api/contatos/cliente/{clienteId} 
 
 - Adicionar contato a um cliente 
 
-## POST /api/contatos 
+** POST /api/contatos 
 
 ## Exemplo de corpo: 
 
